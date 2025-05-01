@@ -10,8 +10,8 @@ This project was completed as part of the **Data Analyst Intern assignment** for
 
 | File | Description |
 |------|-------------|
-| `customer_orders.csv` | Contains order-level details including customer ID, order date, amount, and status |
-| `payments.csv`        | Contains payment transactions linked to orders with details on method, amount, date, and status |
+| `./customer_order.csv` | Contains order-level details including customer ID, order date, amount, and status |
+| `./payments.csv`        | Contains payment transactions linked to orders with details on method, amount, date, and status |
 
 ---
 
