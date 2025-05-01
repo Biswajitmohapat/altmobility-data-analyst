@@ -2,51 +2,66 @@
 
 ## 📋 Project Overview
 
-This project is part of the Data Analyst Intern assignment for **Alt Mobility**, a leading EV leasing and fleet management company. The objective is to analyze customer orders and payments data to uncover insights that can drive better decision-making around sales, operations, and customer retention.
+This project was completed as part of the **Data Analyst Intern assignment** for Alt Mobility, a leading EV leasing and fleet management company. The objective was to analyze customer orders and payments data to uncover insights that support better decision-making across sales, operations, and customer retention.
 
 ---
 
 ## 🗂️ Datasets Used
 
-- **customer_orders.csv**: Contains details about each order, including customer ID, order date, amount, and status.
-- **payments.csv**: Contains payment records linked to orders, including method, amount, date, and status.
+| File | Description |
+|------|-------------|
+| `customer_orders.csv` | Contains order-level details including customer ID, order date, amount, and status |
+| `payments.csv`        | Contains payment transactions linked to orders with details on method, amount, date, and status |
 
 ---
 
 ## ✅ Task-Wise Approach
 
-### **1. Order and Sales Analysis**
-- Analyzed order fulfillment status (Delivered, Pending, Cancelled).
-- Identified revenue trends by month and average order values.
-- Extracted top orders and most profitable customers.
+### 1. 📦 Order and Sales Analysis
+- Analyzed order fulfillment status (Delivered, Pending, Shipped)
+- Identified monthly revenue trends and average order values
+- Highlighted top customers by total spend
 
-### **2. Customer Analysis**
-- Segmented customers into spending brackets (Low, Medium, High).
-- Identified repeat vs. first-time buyers and measured customer lifetime value.
-- Analyzed customer ordering frequency and average time between orders.
+### 2. 👥 Customer Analysis
+- Segmented customers into:
+  - One-Time Buyers
+  - Returning Buyers
+  - Loyal Buyers
+- Measured customer lifetime value and order frequency
 
-### **3. Payment Status Analysis**
-- Evaluated distribution of payment statuses (Completed, Failed, Pending).
-- Assessed payment delays and high-risk payment methods.
-- Estimated lost/unpaid revenue and visualized payment failures over time.
+### 3. 💳 Payment Status Analysis
+- Evaluated payment outcomes: Completed, Failed, and Pending
+- Calculated payment completion rate (~73%)
+- Estimated unpaid revenue (₹1.27M+) and high-risk payment methods
 
-### **4. Order Details Report**
-- Built a comprehensive report by joining order and payment data.
-- Highlighted mismatches like unpaid or underpaid orders and delayed payments.
+### 4. 📊 Order Details Report
+- Joined orders and payments to provide a complete customer-level view
+- Flagged unpaid or underpaid orders and delayed payments
 
-### **5. Customer Retention Analysis (Visualization)**
-- Used cohort-based retention analysis to track customer repeat behavior month-over-month.
-- Visualized key retention metrics using Power BI:
+### 5. 🔁 Customer Retention Analysis (Visualization)
+- Conducted cohort-based retention analysis
+- Visualized in Power BI:
   - Cohort heatmap
-  - Retention line trends
-  - Year-wise contribution to overall retention
+  - Retention trends by month
+  - Retention breakdown by year
+  - Summary KPIs (e.g., 288K total customers, 15K active)
+
+---
+
+## 🧠 Key Insights
+
+Refer to [`Summary_of_Findings.pdf`](./Summary_of_Findings.pdf) for:
+- Data-backed insights on order fulfillment, payments, and customer behavior
+- Retention drop-offs and key metrics by cohort
+- Actionable business recommendations
 
 ---
 
 ## 🛠️ How to Run the Queries
 
-1. Set up a local MySQL environment or use any SQL editor that supports standard SQL (MySQL/PostgreSQL).
-2. Create the database and tables using the provided schema:
+You can use any SQL environment that supports standard SQL (e.g., MySQL, PostgreSQL):
+
+1. Create the database:
    ```sql
    CREATE DATABASE alt_mobility;
    USE alt_mobility;
