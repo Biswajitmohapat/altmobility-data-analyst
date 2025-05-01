@@ -10,8 +10,8 @@ This project was completed as part of the **Data Analyst Intern assignment** for
 
 | File | Description |
 |------|-------------|
-| `./customer_order.csv` | Contains order-level details including customer ID, order date, amount, and status |
-| `./payments.csv`        | Contains payment transactions linked to orders with details on method, amount, date, and status |
+| `customer_order.csv` | Contains order-level details including customer ID, order date, amount, and status |
+| `payments.csv`        | Contains payment transactions linked to orders with details on method, amount, date, and status |
 
 ---
 
@@ -50,7 +50,7 @@ This project was completed as part of the **Data Analyst Intern assignment** for
 
 ## 🧠 Key Insights
 
-Refer to [`Summary_of_Findings.pdf`](./Summary of Findings.pdf) for:
+Refer to [`Summary_of_Findings.pdf`] for:
 - Data-backed insights on order fulfillment, payments, and customer behavior
 - Retention drop-offs and key metrics by cohort
 - Actionable business recommendations
